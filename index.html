@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fad89713bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="./media/images/Kasun_Kalhara.jpg" class="song-img" alt="">
+            <div class="song-name-container">
+                <h1>Mal Mitak Thiyanna (මල් මිටක් තියන්න) </h1>
+            </div>
+            <p>Kasun Kalhara</p>
+
+            <audio  id="song">
+                <source src="./media/song/mal-mitak.mp3" type="audio/mpeg">
+            </audio>
+
+                <input type="range" value="0" id="progress">
+            
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p>Copyright &#169; 2023 Sep  Bhashana Chamodya. All Right Reserved. </p>
+    </footer>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
